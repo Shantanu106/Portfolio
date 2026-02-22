@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="contact-section">
+
+  <section class="contact" id="contact">
+
+    <div class="contact-container">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-info">
+
+        <h2>Let's Build Something Amazing Together</h2>
+
+        <p class="contact-desc">
+          I'm always open to discussing new projects, creative ideas,
+          or opportunities to be part of your vision.
+          Feel free to reach out using any of the methods below.
+        </p>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-phone"></i></div>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 7364886610</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <h4>Email</h4>
+            <p>shantanu.officialwork@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <h4>LinkedIn</h4>
+            <p>linkedin.com/in/shantanu-mondalgnit2027</p>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT SIDE FORM -->
+      <div class="contact-form">
+
+        <form th:action="@{/send-message}" method="post" th:object="${contactRequest}">
+
+          <label>Your Name</label>
+          <input type="text" th:field="*{name}" required>
+
+          <label>Your Email</label>
+          <input type="email" th:field="*{email}" required>
+
+          <label>Your Message</label>
+          <textarea rows="5" th:field="*{message}" required></textarea>
+
+          <button type="submit" class="send-btn">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</th:block>
+</html>

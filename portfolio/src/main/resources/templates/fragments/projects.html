@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<th:block th:fragment="projects-section">
+
+  <section class="projects" id="projects">
+
+    <div class="projects-container">
+
+      <!-- Heading -->
+      <div class="section-header">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Real-world builds & backend systems</p>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img th:src="@{/images/project1.jpg}" alt="project">
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Employees Management System</h3>
+
+            <p class="project-desc">
+              Java + Spring Boot based system for managing employee records with CRUD operations, role management, search functionality, and MySQL database integration.
+            </p>
+
+            <div class="project-tech">
+              <span>Java</span>
+              <span>JDBC</span>
+              <span>MySQL</span>
+              <span>Springboot</span>
+            </div>
+            <div class="project-links">
+
+              <a href="https://github.com/Shantanu106/employeeManagementSystem" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+
+              <a href="https://www.linkedin.com/posts/shantanu-mondalgnit2027_springboot-mysql-java-activity-7390083407210307585-nDZG" target="_blank" class="project-link">
+                <i class="fab fa-linkedin"></i> Post
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 2 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img th:src="@{/images/project2.jpg}" alt="project">
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">File Hiding System</h3>
+
+            <p class="project-desc">
+              Secure file hiding application with login, OTP verification,
+              and encrypted storage using Java.
+            </p>
+
+            <div class="project-tech">
+              <span>Java</span>
+              <span>Spring Boot</span>
+              <span>Security</span>
+            </div>
+            <div class="project-links">
+
+              <a href="https://github.com/your-repo-link" target="_blank" class="project-link">
+                <i class="fab fa-github"></i> Code
+              </a>
+
+              <a href="https://www.linkedin.com/posts/shantanu-mondalgnit2027_java-jdbc-mysql-activity-7358142143967715329-mUgI" target="_blank" class="project-link">
+                <i class="fab fa-linkedin"></i> Post
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- PROJECT 3 -->
+        <div class="project-card">
+
+          <div class="project-image">
+            <img th:src="@{/images/project3.png}" alt="project">
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Portfolio Website</h3>
+
+            <p class="project-desc">
+              Personal portfolio built using Spring Boot, Thymeleaf,
+              and modern frontend UI design principles.
+            </p>
+
+            <div class="project-tech">
+              <span>Spring Boot</span>
+              <span>Thymeleaf</span>
+              <span>CSS</span>
+              <span>JS</span>
+              <div class="project-links">
+
+                <a href="https://github.com/Shantanu106/employeeManagementSystem" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i> Code
+                </a>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</th:block>
+</html>
